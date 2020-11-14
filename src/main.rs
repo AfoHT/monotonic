@@ -1,7 +1,7 @@
 pub use monotonic::monotonic;
 
 fn main() {
-    println!("Hello, monotic!");
+    println!("Hello, monotonic!");
 
     #[allow(dead_code)]
     #[monotonic(
@@ -12,4 +12,11 @@ fn main() {
         interruptname=ISR, handlerimpl=handler
         )]
     struct Monotonic {}
+
+    #[allow(dead_code)]
+    #[monotonic(
+        monotonic = [ISR, handler]
+        monotonic = [ISR, handler]
+        )]
+    struct Monotonic2 {}
 }
