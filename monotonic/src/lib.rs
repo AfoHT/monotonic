@@ -9,7 +9,7 @@ use std::{fs, path::Path};
 pub fn monotonic(args: TokenStream, input: TokenStream) -> TokenStream {
 
     println!("Args: {:#?}", args);
-    println!("Args: {:#?}", input);
+    println!("Input: {:#?}", input);
 
     let ts = input;
 
