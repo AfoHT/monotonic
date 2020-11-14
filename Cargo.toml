@@ -1,0 +1,16 @@
+[package]
+name = "monotonictesting"
+version = "0.1.0"
+authors = ["Henrik Tjäder <henrik@tjaders.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+proc-macro2 = "1.0"
+monotonic = { path = "monotonic", version = "0.1.0" }
+
+[workspace]
+members = [
+  "monotonic",
+]
